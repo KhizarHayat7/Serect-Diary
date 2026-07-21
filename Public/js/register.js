@@ -25,7 +25,7 @@ document.getElementById("password").value;
 
 const response =
 await fetch(
-"http://localhost:8080/api/auth/register",
+"/api/auth/register",
 {
 
 method:"POST",
