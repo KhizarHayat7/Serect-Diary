@@ -43,7 +43,7 @@ async function loadChapter(){
 
         const response =
         await fetch(
-        `http://localhost:8080/api/dairy/chapter/${chapterId}`,
+        `/api/dairy/chapter/${chapterId}`,
         {
 
             method:"GET",
@@ -135,7 +135,7 @@ async()=>{
         const response =
         await fetch(
 
-        `http://localhost:8080/api/dairy/UpdateChapter/${chapterId}`,
+        `/api/dairy/UpdateChapter/${chapterId}`,
 
         {
 
