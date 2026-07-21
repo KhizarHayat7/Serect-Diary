@@ -35,7 +35,7 @@ async function loadChapters(){
 
 
         const response = await fetch(
-            "http://localhost:8080/api/dairy/chapters",
+            "/api/dairy/chapters",
             {
 
                 method:"GET",
