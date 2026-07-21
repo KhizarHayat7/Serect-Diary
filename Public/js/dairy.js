@@ -54,7 +54,7 @@ async function loadChapter(){
 
 const response =
 await fetch(
-`http://localhost:8080/api/dairy/chapter/${chapterId}`,
+`/api/dairy/chapter/${chapterId}`,
 {
 credentials:"include"
 }
@@ -162,7 +162,7 @@ return;
 const response =
 await fetch(
 
-`http://localhost:8080/api/dairy/deleteChapter/${chapterId}`,
+`/api/dairy/deleteChapter/${chapterId}`,
 
 {
 
