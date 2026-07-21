@@ -31,14 +31,21 @@ export const registerUser = async(req, res) => {
         return res.status(400).json({ message: "Username, password, and email are required." });
     }
 
+    
+
     username = username.trim();
     password = password.trim();
     email = email.trim();
 
+    
+
     if(!validator.isEmail(email)) {
         return res.status(400).json({ message: "Invalid email format." });
     }
-
+    const IsExist = await pool.query('SELECT * FROM users WHERE username = $1 OR email = $2', [username, email]);
+    if (IsExist.rows.length > 0) {
+        return res.status(400).json({ message: "Username or email already exists." });
+    }
     
 
     const hashedPassword = bcrypt.hashSync(password, 10);
