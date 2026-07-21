@@ -57,7 +57,7 @@ document.getElementById("chapterContent").value;
 
 const response =
 await fetch(
-"http://localhost:8080/api/dairy/createChapter",
+"/api/dairy/createChapter",
 {
 
 method:"POST",
