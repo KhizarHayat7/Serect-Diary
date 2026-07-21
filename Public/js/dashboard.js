@@ -301,7 +301,7 @@ async()=>{
 
 
     await fetch(
-        "http://localhost:8080/api/auth/logout",
+        "/api/auth/logout",
         {
 
             method:"POST",
