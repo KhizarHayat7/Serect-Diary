@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Secret Diary | Dashboard</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+
+    <div class="logo">
+        📖 Secret Diary
+    </div>
+
+
+
+    <div class="nav-actions">
+
+
+        <input 
+        type="text"
+        id="searchInput"
+        placeholder="Search chapters..."
+        >
+
+
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+
+    </div>
+
+
+</header>
+
+
+
+
+<main class="dashboard">
+
+
+    <section class="top-section">
+
+
+        <h1>
+            My Chapters
+        </h1>
+
+
+
+       <a href="createChapter.html" class="create-btn">
+        + New Chapter </a>
+
+
+    </section>
+
+
+
+
+
+    <section class="filters">
+
+
+        <select id="sortSelect">
+
+
+            <option value="newest">
+                Newest
+            </option>
+
+
+            <option value="oldest">
+                Oldest
+            </option>
+
+
+            <option value="rating">
+                Highest Rating
+            </option>
+
+
+        </select>
+
+
+    </section>
+
+
+
+
+
+
+    <section 
+    id="chapterContainer"
+    class="chapter-container">
+
+
+    </section>
+
+
+
+
+</main>
+
+
+
+
+
+<script src="js/dashboard.js" ></script>
+
+
+
+</body>
+
+
+</html>

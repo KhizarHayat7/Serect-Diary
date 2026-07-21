@@ -1,0 +1,21 @@
+{
+  "name": "serect_dairy",
+  "version": "1.0.0",
+  "description": "A Project focus on backend learning through Serect Dairy Application",
+  "license": "ISC",
+  "author": "Khizar hayat",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "pg": "^8.22.0",
+    "postgres": "^3.4.9",
+    "validator": "^13.15.35"
+  }
+}
